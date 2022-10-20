@@ -11,7 +11,7 @@ from tqdm.auto import tqdm
 import pandas as pd
 from nltk import ngrams
 
-class Bert:
+class T5:
     # WordPiece is a bool same with use only lowercase should be(true, true) for first test
     def __init__(self, vocabFile, wordPiece, onlyLowercase):
         #might remove
