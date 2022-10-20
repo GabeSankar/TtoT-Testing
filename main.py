@@ -1,5 +1,5 @@
 # This is a sample Python script.
-import Bert as bt
+import T5 as t
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -8,7 +8,7 @@ import Bert as bt
 def run(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    model = bt.Bert(vocabFile="cased30k.vocab", wordPiece=True, onlyLowercase=False)
+    model = t.T5(vocabFile="cased30k.vocab", wordPiece=True, onlyLowercase=False)
     #model.train(500)
     #model.metricTest()
     model.printExample(model.test_dataset[142])
